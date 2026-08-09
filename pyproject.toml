@@ -1,0 +1,16 @@
+[project]
+name = "health-manager"
+version = "1.0.0"
+description = "电脑端健康管理与数据分析软件（BMI/BMR/TDEE/体脂率、个性化建议、历史记录与每周自动汇总）"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "PyQt6>=6.6",
+    "PyQt6-Charts>=6.6",
+]
+
+[project.optional-dependencies]
+dev = ["pyinstaller>=6.0"]
+
+[project.scripts]
+health-manager = "main:main"
